@@ -10,14 +10,14 @@ uses
 type
   TFsiswa = class(TForm)
     Label3: TLabel;
-    Edt2: TEdit;
+    EdtNis: TEdit;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
-    Edt3: TEdit;
-    Edt4: TEdit;
-    Edt5: TEdit;
-    Edt6: TEdit;
+    EdtNisn: TEdit;
+    EdtNama_siswa: TEdit;
+    EdtNik: TEdit;
+    EdtTempat_lahir: TEdit;
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
@@ -27,10 +27,10 @@ type
     Label13: TLabel;
     Label14: TLabel;
     Label15: TLabel;
-    Edt10: TEdit;
-    Edt9: TEdit;
-    Edt8: TEdit;
-    Edt7: TEdit;
+    EdtHp: TEdit;
+    EdtTelepon: TEdit;
+    EdtAlamat: TEdit;
+    EdtWali_kelas: TEdit;
     Label1: TLabel;
     btn1: TButton;
     btn2: TButton;
@@ -39,11 +39,11 @@ type
     btn5: TButton;
     ZConnection1: TZConnection;
     DataSource1: TDataSource;
-    Cbb1: TComboBox;
-    Cbb2: TComboBox;
-    Cbb3: TComboBox;
+    CbbJkelamin: TComboBox;
+    CbbTingkat_kelas: TComboBox;
+    CbbJurusan: TComboBox;
     Dtime: TDateTimePicker;
-    Edt11: TEdit;
+    EdtStatus: TEdit;
     Label16: TLabel;
     DBGrid1: TDBGrid;
     ZQuery1: TZQuery;
@@ -65,7 +65,7 @@ implementation
 procedure TFsiswa.btn2Click(Sender: TObject);
 begin
   ZQuery1.SQL.Clear;
-  ZQuery1.SQL.Add('insert into tabel_siswa values(null,"'+Edt2.Text+'","'+Edt3.Text+'","'+Edt4.Text+'","'+Edt5.Text+'","'+Edt6.Text+'","'+formatdatetime('yyyy-mm-dd',Dtime.Date)+'","'+Cbb1.Text+'","'+Cbb2.Text+'","'+Cbb3.Text+'","'+Edt7.Text+'","'+Edt8.Text+'","'+Edt9.Text+'","'+Edt10.Text+'","'+Edt11.Text+'")');
+  ZQuery1.SQL.Add('insert into tabel_siswa values(null,"'+EdtNis.Text+'","'+EdtNisn.Text+'","'+EdtNama_siswa.Text+'","'+EdtNik.Text+'","'+EdtTempat_lahir.Text+'","'+formatdatetime('yyyy-mm-dd',Dtime.Date)+'","'+CbbJkelamin.Text+'","'+CbbTingkat_kelas.Text+'","'+CbbJurusan.Text+'","'+EdtWali_kelas.Text+'","'+EdtAlamat.Text+'","'+EdtTelepon.Text+'","'+EdtHp.Text+'","'+EdtStatus.Text+'")');
   ZQuery1.ExecSQL ;
 
   ZQuery1.SQL.Clear;
@@ -77,7 +77,7 @@ end;
 procedure TFsiswa.btn3Click(Sender: TObject);
 begin
 ZQuery1.SQL.Clear;
-  ZQuery1.SQL.Add('update tb_siswa set nis="'+EdtNis.Text+'", nisn="'+EdtNisn.Text+'", nama_siswa="'+EdtNama_siswa.Text+'", nik="'+EdtNik.Text+'", tempat_lahir="'+EdtTempat_lahir.Text+'",jenis_kelamin="'+CbbJKelamin.Text+'",tingkat_kelas="'+CbbTingkat_kelas.Text+'",jurusan="'+CbbJurusan.Text+'",wali_kelas="'+EdtWali_kelas.Text+'",alamat="'+EdtAlamat.Text+'",telp="'+EdtNo_telp.Text+'",hp="'+EdtNo_hp.Text+'",status="'+CbbStatus.Text+'" where siswa_id="'+id+'"');
+  ZQuery1.SQL.Add('update tb_siswa set nis="'+EdtNis.Text+'", nisn="'+EdtNisn.Text+'", nama_siswa="'+EdtNama_siswa.Text+'", nik="'+EdtNik.Text+'", tempat_lahir="'+EdtTempat_lahir.Text+'",jenis_kelamin="'+CbbJKelamin.Text+'",tingkat_kelas="'+CbbTingkat_kelas.Text+'",jurusan="'+CbbJurusan.Text+'",wali_kelas="'+EdtWali_kelas.Text+'",alamat="'+EdtAlamat.Text+'",telp="'+EdtTelepon.Text+'",hp="'+EdtHp.Text+'",status="'+EdtStatus.Text+'" where siswa_id="'+id+'"');
   ZQuery1.ExecSQL;
 
   ZQuery1.SQL.Clear;

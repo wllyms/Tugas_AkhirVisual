@@ -411,7 +411,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
     TabOrder = 17
   end
-  object Edt11: TEdit
+  object EdtStatus: TEdit
     Left = 296
     Top = 613
     Width = 265
