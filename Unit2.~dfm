@@ -412,26 +412,36 @@ object Fsiswa: TFsiswa
     ParentFont = False
     TabOrder = 17
   end
-  object EdtStatus: TEdit
-    Left = 296
-    Top = 613
-    Width = 265
-    Height = 21
-    TabOrder = 18
-  end
   object DBGrid1: TDBGrid
     Left = 584
     Top = 16
     Width = 481
     Height = 361
     DataSource = DataSource1
-    TabOrder = 19
+    TabOrder = 18
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
     OnCellClick = DBGrid1CellClick
+  end
+  object CbbStatus: TComboBox
+    Left = 296
+    Top = 608
+    Width = 265
+    Height = 24
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ItemHeight = 16
+    ParentFont = False
+    TabOrder = 19
+    Items.Strings = (
+      'AKTIF'
+      'TIDAK AKTIF')
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

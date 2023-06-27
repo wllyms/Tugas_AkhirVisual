@@ -43,10 +43,10 @@ type
     CbbTingkat_kelas: TComboBox;
     CbbJurusan: TComboBox;
     Dtime: TDateTimePicker;
-    EdtStatus: TEdit;
     Label16: TLabel;
     DBGrid1: TDBGrid;
     ZQuery1: TZQuery;
+    CbbStatus: TComboBox;
     procedure btn2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure btn4Click(Sender: TObject);
