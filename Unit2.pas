@@ -10,14 +10,14 @@ uses
 type
   TFsiswa = class(TForm)
     Label3: TLabel;
-    Edt2: TEdit;
+    EdtNis: TEdit;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
-    Edt3: TEdit;
-    Edt4: TEdit;
-    Edt5: TEdit;
-    Edt6: TEdit;
+    EdtNisn: TEdit;
+    EdtNama_siswa: TEdit;
+    EdtNik: TEdit;
+    EdtTempat_lahir: TEdit;
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
@@ -27,10 +27,10 @@ type
     Label13: TLabel;
     Label14: TLabel;
     Label15: TLabel;
-    Edt10: TEdit;
-    Edt9: TEdit;
-    Edt8: TEdit;
-    Edt7: TEdit;
+    EdtHp: TEdit;
+    EdtTelepon: TEdit;
+    EdtAlamat: TEdit;
+    EdtWali_kelas: TEdit;
     Label1: TLabel;
     btn1: TButton;
     btn2: TButton;
@@ -39,15 +39,16 @@ type
     btn5: TButton;
     ZConnection1: TZConnection;
     DataSource1: TDataSource;
-    Cbb1: TComboBox;
-    Cbb2: TComboBox;
-    Cbb3: TComboBox;
+    CbbJkelamin: TComboBox;
+    CbbTingkat_kelas: TComboBox;
+    CbbJurusan: TComboBox;
     Dtime: TDateTimePicker;
     Edt11: TEdit;
     Label16: TLabel;
     DBGrid1: TDBGrid;
     ZQuery1: TZQuery;
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,6 +72,18 @@ begin
   ZQuery1.SQL.Add('select * from tabel_siswa');
   ZQuery1.Open;
   ShowMessage('DATA BERHASIL DISIMPAN');
+end;
+
+procedure TFsiswa.btn3Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('update tb_siswa set nis="'+EdtNis.Text+'", nisn="'+EdtNisn.Text+'", nama_siswa="'+EdtNama_siswa.Text+'", nik="'+EdtNik.Text+'", tempat_lahir="'+EdtTempat_lahir.Text+'",jenis_kelamin="'+CbbJKelamin.Text+'",tingkat_kelas="'+CbbTingkat_kelas.Text+'",jurusan="'+CbbJurusan.Text+'",wali_kelas="'+EdtWali_kelas.Text+'",alamat="'+EdtAlamat.Text+'",telp="'+EdtNo_telp.Text+'",hp="'+EdtNo_hp.Text+'",status="'+CbbStatus.Text+'" where siswa_id="'+id+'"');
+  ZQuery1.ExecSQL;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from tb_siswa');
+  ZQuery1.Open;
+  Showmessage('DATA BERHASIL DI EDIT');
 end;
 
 end.

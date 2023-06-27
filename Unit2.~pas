@@ -48,6 +48,7 @@ type
     DBGrid1: TDBGrid;
     ZQuery1: TZQuery;
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -64,13 +65,25 @@ implementation
 procedure TFsiswa.btn2Click(Sender: TObject);
 begin
   ZQuery1.SQL.Clear;
-  ZQuery1.SQL.Add('insert into tabel_siswa values(null,"'+Edt2.Text+'","'+Edt3.Text+'","'+Edt4.Text+'","'+Edt5.Text+'","'+Edt6.Text+'""'+formatdatetime('yyyy-mm-dd',Dtime.Date)+'","'+Cbb1.Text+'","'+Cbb2.Text+'","'+Cbb3.Text+'","'+Edt7.Text+'","'+Edt8.Text+'","'+Edt9.Text+'","'+Edt10.Text+'","'+Edt11.Text+'")');
+  ZQuery1.SQL.Add('insert into tabel_siswa values(null,"'+Edt2.Text+'","'+Edt3.Text+'","'+Edt4.Text+'","'+Edt5.Text+'","'+Edt6.Text+'","'+formatdatetime('yyyy-mm-dd',Dtime.Date)+'","'+Cbb1.Text+'","'+Cbb2.Text+'","'+Cbb3.Text+'","'+Edt7.Text+'","'+Edt8.Text+'","'+Edt9.Text+'","'+Edt10.Text+'","'+Edt11.Text+'")');
   ZQuery1.ExecSQL ;
 
   ZQuery1.SQL.Clear;
   ZQuery1.SQL.Add('select * from tabel_siswa');
   ZQuery1.Open;
   ShowMessage('DATA BERHASIL DISIMPAN');
+end;
+
+procedure TFsiswa.btn3Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('update tb_siswa set nis="'+EdtNis.Text+'", nisn="'+EdtNisn.Text+'", nama_siswa="'+EdtNama_siswa.Text+'", nik="'+EdtNik.Text+'", tempat_lahir="'+EdtTempat_lahir.Text+'",jenis_kelamin="'+CbbJKelamin.Text+'",tingkat_kelas="'+CbbTingkat_kelas.Text+'",jurusan="'+CbbJurusan.Text+'",wali_kelas="'+EdtWali_kelas.Text+'",alamat="'+EdtAlamat.Text+'",telp="'+EdtNo_telp.Text+'",hp="'+EdtNo_hp.Text+'",status="'+CbbStatus.Text+'" where siswa_id="'+id+'"');
+  ZQuery1.ExecSQL;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from tb_siswa');
+  ZQuery1.Open;
+  Showmessage('DATA BERHASIL DI EDIT');
 end;
 
 end.

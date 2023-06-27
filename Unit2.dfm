@@ -209,63 +209,63 @@ object Fsiswa: TFsiswa
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object Edt2: TEdit
+  object EdtNis: TEdit
     Left = 296
     Top = 8
     Width = 265
     Height = 21
     TabOrder = 0
   end
-  object Edt3: TEdit
+  object EdtNisn: TEdit
     Left = 296
     Top = 56
     Width = 265
     Height = 21
     TabOrder = 1
   end
-  object Edt4: TEdit
+  object EdtNama_siswa: TEdit
     Left = 296
     Top = 104
     Width = 265
     Height = 21
     TabOrder = 2
   end
-  object Edt5: TEdit
+  object EdtNik: TEdit
     Left = 296
     Top = 152
     Width = 265
     Height = 21
     TabOrder = 3
   end
-  object Edt6: TEdit
+  object EdtTempat_lahir: TEdit
     Left = 296
     Top = 200
     Width = 265
     Height = 21
     TabOrder = 4
   end
-  object Edt10: TEdit
+  object EdtHp: TEdit
     Left = 296
     Top = 573
     Width = 265
     Height = 21
     TabOrder = 5
   end
-  object Edt9: TEdit
+  object EdtTelepon: TEdit
     Left = 296
     Top = 528
     Width = 265
     Height = 21
     TabOrder = 6
   end
-  object Edt8: TEdit
+  object EdtAlamat: TEdit
     Left = 296
     Top = 480
     Width = 265
     Height = 21
     TabOrder = 7
   end
-  object Edt7: TEdit
+  object EdtWali_kelas: TEdit
     Left = 296
     Top = 432
     Width = 265
@@ -314,6 +314,7 @@ object Fsiswa: TFsiswa
     Font.Style = []
     ParentFont = False
     TabOrder = 11
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 960
@@ -343,7 +344,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
     TabOrder = 13
   end
-  object Cbb1: TComboBox
+  object CbbJkelamin: TComboBox
     Left = 296
     Top = 304
     Width = 265
@@ -360,7 +361,7 @@ object Fsiswa: TFsiswa
       'LAKI-LAKI'
       'PEREMPUAN')
   end
-  object Cbb2: TComboBox
+  object CbbTingkat_kelas: TComboBox
     Left = 296
     Top = 352
     Width = 265
@@ -378,7 +379,7 @@ object Fsiswa: TFsiswa
       '11'
       '12')
   end
-  object Cbb3: TComboBox
+  object CbbJurusan: TComboBox
     Left = 296
     Top = 392
     Width = 265
