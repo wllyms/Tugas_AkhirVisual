@@ -431,6 +431,7 @@ object Fsiswa: TFsiswa
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
