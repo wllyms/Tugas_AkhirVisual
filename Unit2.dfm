@@ -329,6 +329,7 @@ object Fsiswa: TFsiswa
     Font.Style = []
     ParentFont = False
     TabOrder = 12
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 1080
