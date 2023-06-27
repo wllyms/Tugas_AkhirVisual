@@ -16,9 +16,9 @@ object Form4: TForm4
   object Label2: TLabel
     Left = 64
     Top = 128
-    Width = 89
+    Width = 99
     Height = 24
-    Caption = 'ID ORTU'
+    Caption = 'ID KELAS'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -21

@@ -146,9 +146,9 @@ object Form4: TForm4
   object Label1: TLabel
     Left = 456
     Top = 48
-    Width = 263
+    Width = 207
     Height = 25
-    Caption = 'INPUT DATA ORANG TUA'
+    Caption = 'INPUT DATA KELAS'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -20
