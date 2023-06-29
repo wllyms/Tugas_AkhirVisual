@@ -15,6 +15,7 @@ type
     Button3: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,7 +27,7 @@ var
 
 implementation
 
-uses Unit2, Unit3;
+uses Unit2, Unit3, Unit4;
 
 {$R *.dfm}
 
@@ -38,6 +39,11 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 begin
 Fortu.show;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+Fkelas.show;
 end;
 
 end.
