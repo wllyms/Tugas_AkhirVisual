@@ -1,4 +1,4 @@
-object Form4: TForm4
+object Fkelas: TFkelas
   Left = 192
   Top = 117
   Width = 1044

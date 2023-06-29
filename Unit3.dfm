@@ -13,22 +13,9 @@ object Fortu: TFortu
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Label2: TLabel
-    Left = 64
-    Top = 128
-    Width = 93
-    Height = 24
-    Caption = 'ID ORTU'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -21
-    Font.Name = 'Calisto MT'
-    Font.Style = []
-    ParentFont = False
-  end
   object Label3: TLabel
     Left = 64
-    Top = 168
+    Top = 120
     Width = 41
     Height = 24
     Caption = 'NIK'
@@ -41,7 +28,7 @@ object Fortu: TFortu
   end
   object Label4: TLabel
     Left = 64
-    Top = 216
+    Top = 168
     Width = 69
     Height = 24
     Caption = 'NAMA'
@@ -54,7 +41,7 @@ object Fortu: TFortu
   end
   object Label5: TLabel
     Left = 64
-    Top = 264
+    Top = 216
     Width = 143
     Height = 24
     Caption = 'PENDIDIKAN'
@@ -67,7 +54,7 @@ object Fortu: TFortu
   end
   object Label6: TLabel
     Left = 64
-    Top = 312
+    Top = 264
     Width = 130
     Height = 24
     Caption = 'PEKERJAAN'
@@ -79,8 +66,8 @@ object Fortu: TFortu
     ParentFont = False
   end
   object Label7: TLabel
-    Left = 616
-    Top = 120
+    Left = 64
+    Top = 312
     Width = 96
     Height = 24
     Caption = 'ALAMAT'
@@ -92,8 +79,8 @@ object Fortu: TFortu
     ParentFont = False
   end
   object Label8: TLabel
-    Left = 616
-    Top = 168
+    Left = 592
+    Top = 120
     Width = 89
     Height = 24
     Caption = 'TELPON'
@@ -105,8 +92,8 @@ object Fortu: TFortu
     ParentFont = False
   end
   object Label9: TLabel
-    Left = 616
-    Top = 216
+    Left = 592
+    Top = 168
     Width = 85
     Height = 24
     Caption = 'AGAMA'
@@ -118,8 +105,8 @@ object Fortu: TFortu
     ParentFont = False
   end
   object Label10: TLabel
-    Left = 616
-    Top = 264
+    Left = 592
+    Top = 216
     Width = 170
     Height = 24
     Caption = 'JENIS KELAMIN'
@@ -131,8 +118,8 @@ object Fortu: TFortu
     ParentFont = False
   end
   object Label11: TLabel
-    Left = 616
-    Top = 312
+    Left = 592
+    Top = 264
     Width = 85
     Height = 24
     Caption = 'STATUS'
@@ -156,40 +143,33 @@ object Fortu: TFortu
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object EdtOrtu: TEdit
+  object EdtNik: TEdit
     Left = 296
     Top = 120
     Width = 265
     Height = 21
     TabOrder = 0
   end
-  object EdtNik: TEdit
+  object EdtNama: TEdit
     Left = 296
     Top = 168
     Width = 265
     Height = 21
     TabOrder = 1
   end
-  object EdtNama: TEdit
+  object EdtPekerjaan: TEdit
     Left = 296
-    Top = 216
+    Top = 264
     Width = 265
     Height = 21
     TabOrder = 2
   end
-  object EdtPekerjaan: TEdit
+  object EdtAlamat: TEdit
     Left = 296
     Top = 312
     Width = 265
     Height = 21
     TabOrder = 3
-  end
-  object EdtAlamat: TEdit
-    Left = 848
-    Top = 120
-    Width = 265
-    Height = 21
-    TabOrder = 4
   end
   object btn2: TButton
     Left = 352
@@ -203,7 +183,8 @@ object Fortu: TFortu
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 4
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 472
@@ -217,7 +198,7 @@ object Fortu: TFortu
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 5
   end
   object btn4: TButton
     Left = 592
@@ -231,7 +212,7 @@ object Fortu: TFortu
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 6
   end
   object btn5: TButton
     Left = 712
@@ -245,21 +226,21 @@ object Fortu: TFortu
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 7
   end
   object EdtTelepon: TEdit
-    Left = 848
+    Left = 824
+    Top = 120
+    Width = 265
+    Height = 21
+    TabOrder = 8
+  end
+  object EdtAgama: TEdit
+    Left = 824
     Top = 168
     Width = 265
     Height = 21
     TabOrder = 9
-  end
-  object EdtAgama: TEdit
-    Left = 848
-    Top = 216
-    Width = 265
-    Height = 21
-    TabOrder = 10
   end
   object DBGrid1: TDBGrid
     Left = 72
@@ -267,7 +248,7 @@ object Fortu: TFortu
     Width = 1057
     Height = 369
     DataSource = DataSource1
-    TabOrder = 11
+    TabOrder = 10
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -276,7 +257,29 @@ object Fortu: TFortu
   end
   object CbbPendidikan: TComboBox
     Left = 296
-    Top = 263
+    Top = 215
+    Width = 265
+    Height = 21
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ItemHeight = 13
+    ParentFont = False
+    TabOrder = 11
+    Items.Strings = (
+      'SD'
+      'SMP'
+      'SMA/K'
+      'SEDERAJAT'
+      'S1'
+      'S2'
+      'S3')
+  end
+  object CbbJk: TComboBox
+    Left = 825
+    Top = 216
     Width = 265
     Height = 21
     Font.Charset = DEFAULT_CHARSET
@@ -288,35 +291,16 @@ object Fortu: TFortu
     ParentFont = False
     TabOrder = 12
     Items.Strings = (
-      'SD'
-      'SMP'
-      'SMA/K'
-      'SEDERAJAT')
-  end
-  object CbbJk: TComboBox
-    Left = 849
-    Top = 264
-    Width = 265
-    Height = 21
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'MS Sans Serif'
-    Font.Style = []
-    ItemHeight = 13
-    ParentFont = False
-    TabOrder = 13
-    Items.Strings = (
       'LAKI-LAKI'
       'PEREMPUAN')
   end
   object CbbStatus: TComboBox
-    Left = 849
-    Top = 306
+    Left = 825
+    Top = 258
     Width = 266
     Height = 21
     ItemHeight = 13
-    TabOrder = 14
+    TabOrder = 13
     Items.Strings = (
       'KANDUNG'
       'WALI')

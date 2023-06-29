@@ -51,6 +51,7 @@ type
     procedure btn3Click(Sender: TObject);
     procedure btn4Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
+    procedure btn5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -116,6 +117,23 @@ id:=ZQuery1.Fields[0].AsString;
   EdtTelepon.Text:=ZQuery1.Fields[12].AsString;
   EdtHp.Text:=ZQuery1.Fields[13].AsString;
   CbbStatus.Text:=ZQuery1.Fields[14].AsString;
+end;
+
+procedure TFsiswa.btn5Click(Sender: TObject);
+begin
+EdtNis.Clear;
+  EdtNisn.Clear;
+  EdtNama_siswa.Clear;
+  EdtNik.Clear;
+  EdtTempat_lahir.Clear;
+  CbbJKelamin.Clear;
+  CbbTingkat_kelas.Clear;
+  CbbJurusan.Clear;
+  EdtWali_kelas.Clear;
+  EdtAlamat.Clear;
+  EdTelepon.Clear;
+  EdtHp.Clear;
+  CbbStatus.Clear;
 end;
 
 end.

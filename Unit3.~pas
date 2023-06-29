@@ -9,7 +9,6 @@ uses
 
 type
   TFortu = class(TForm)
-    Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
@@ -20,7 +19,6 @@ type
     Label10: TLabel;
     Label11: TLabel;
     Label1: TLabel;
-    EdtOrtu: TEdit;
     EdtNik: TEdit;
     EdtNama: TEdit;
     EdtPekerjaan: TEdit;
@@ -35,9 +33,10 @@ type
     EdtTelepon: TEdit;
     EdtAgama: TEdit;
     DBGrid1: TDBGrid;
-    ComboBox1: TComboBox;
-    ComboBox2: TComboBox;
-    ComboBox3: TComboBox;
+    CbbPendidikan: TComboBox;
+    CbbJk: TComboBox;
+    CbbStatus: TComboBox;
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,5 +49,17 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFortu.btn2Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('insert into ortu values(null,"'+EdtNik.Text+'","'+EdtNama.Text+'","'+EdtPendidikan.Text+'","'+EdtAlamat.Text+'","'+CbbJkelamin.Text+'","'+CbbTingkat_kelas.Text+'","'+CbbJurusan.Text+'","'+EdtWali_kelas.Text+'","'+EdtAlamat.Text+'","'+EdtTelepon.Text+'","'+EdtHp.Text+'","'+CbbStatus.Text+'")');
+  ZQuery1.ExecSQL ;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from ortu');
+  ZQuery1.Open;
+  ShowMessage('DATA BERHASIL DISIMPAN');
+end;
 
 end.

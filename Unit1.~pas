@@ -14,6 +14,7 @@ type
     Button2: TButton;
     Button3: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,6 +33,11 @@ uses Unit2;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
 Fsiswa.show;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+Fortu.show;
 end;
 
 end.

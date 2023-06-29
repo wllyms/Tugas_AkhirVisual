@@ -3,6 +3,7 @@ object Fsiswa: TFsiswa
   Top = 113
   Width = 1106
   Height = 687
+  HorzScrollBar.Position = 104
   VertScrollBar.Position = 128
   Caption = 'FORM SISWA'
   Color = clBtnFace
@@ -15,7 +16,7 @@ object Fsiswa: TFsiswa
   PixelsPerInch = 96
   TextHeight = 13
   object Label3: TLabel
-    Left = 64
+    Left = -40
     Top = 16
     Width = 36
     Height = 24
@@ -28,7 +29,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 64
+    Left = -40
     Top = 64
     Width = 53
     Height = 24
@@ -41,7 +42,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label5: TLabel
-    Left = 64
+    Left = -40
     Top = 112
     Width = 143
     Height = 24
@@ -54,7 +55,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label6: TLabel
-    Left = 64
+    Left = -40
     Top = 160
     Width = 40
     Height = 24
@@ -67,7 +68,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label7: TLabel
-    Left = 64
+    Left = -40
     Top = 208
     Width = 158
     Height = 24
@@ -80,7 +81,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label8: TLabel
-    Left = 64
+    Left = -40
     Top = 256
     Width = 182
     Height = 24
@@ -93,7 +94,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label9: TLabel
-    Left = 64
+    Left = -40
     Top = 304
     Width = 166
     Height = 24
@@ -106,7 +107,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label10: TLabel
-    Left = 64
+    Left = -40
     Top = 352
     Width = 173
     Height = 24
@@ -119,7 +120,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label11: TLabel
-    Left = 64
+    Left = -40
     Top = 400
     Width = 102
     Height = 24
@@ -132,7 +133,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label12: TLabel
-    Left = 64
+    Left = -40
     Top = 440
     Width = 133
     Height = 24
@@ -145,7 +146,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label13: TLabel
-    Left = 64
+    Left = -40
     Top = 488
     Width = 93
     Height = 24
@@ -158,7 +159,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label14: TLabel
-    Left = 64
+    Left = -40
     Top = 536
     Width = 98
     Height = 24
@@ -171,7 +172,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label15: TLabel
-    Left = 64
+    Left = -40
     Top = 575
     Width = 29
     Height = 24
@@ -184,7 +185,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label1: TLabel
-    Left = 480
+    Left = 376
     Top = -80
     Width = 208
     Height = 25
@@ -197,7 +198,7 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object Label16: TLabel
-    Left = 64
+    Left = -40
     Top = 615
     Width = 80
     Height = 24
@@ -210,70 +211,70 @@ object Fsiswa: TFsiswa
     ParentFont = False
   end
   object EdtNis: TEdit
-    Left = 296
+    Left = 192
     Top = 8
     Width = 265
     Height = 21
     TabOrder = 0
   end
   object EdtNisn: TEdit
-    Left = 296
+    Left = 192
     Top = 56
     Width = 265
     Height = 21
     TabOrder = 1
   end
   object EdtNama_siswa: TEdit
-    Left = 296
+    Left = 192
     Top = 104
     Width = 265
     Height = 21
     TabOrder = 2
   end
   object EdtNik: TEdit
-    Left = 296
+    Left = 192
     Top = 152
     Width = 265
     Height = 21
     TabOrder = 3
   end
   object EdtTempat_lahir: TEdit
-    Left = 296
+    Left = 192
     Top = 200
     Width = 265
     Height = 21
     TabOrder = 4
   end
   object EdtHp: TEdit
-    Left = 296
+    Left = 192
     Top = 573
     Width = 265
     Height = 21
     TabOrder = 5
   end
   object EdtTelepon: TEdit
-    Left = 296
+    Left = 192
     Top = 528
     Width = 265
     Height = 21
     TabOrder = 6
   end
   object EdtAlamat: TEdit
-    Left = 296
+    Left = 192
     Top = 480
     Width = 265
     Height = 21
     TabOrder = 7
   end
   object EdtWali_kelas: TEdit
-    Left = 296
+    Left = 192
     Top = 432
     Width = 265
     Height = 21
     TabOrder = 8
   end
   object btn1: TButton
-    Left = 600
+    Left = 496
     Top = 384
     Width = 97
     Height = 49
@@ -287,7 +288,7 @@ object Fsiswa: TFsiswa
     TabOrder = 9
   end
   object btn2: TButton
-    Left = 720
+    Left = 616
     Top = 384
     Width = 97
     Height = 49
@@ -302,7 +303,7 @@ object Fsiswa: TFsiswa
     OnClick = btn2Click
   end
   object btn3: TButton
-    Left = 840
+    Left = 736
     Top = 384
     Width = 97
     Height = 49
@@ -317,7 +318,7 @@ object Fsiswa: TFsiswa
     OnClick = btn3Click
   end
   object btn4: TButton
-    Left = 960
+    Left = 856
     Top = 384
     Width = 97
     Height = 49
@@ -332,7 +333,7 @@ object Fsiswa: TFsiswa
     OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 1080
+    Left = 976
     Top = 384
     Width = 105
     Height = 49
@@ -344,9 +345,10 @@ object Fsiswa: TFsiswa
     Font.Style = []
     ParentFont = False
     TabOrder = 13
+    OnClick = btn5Click
   end
   object CbbJkelamin: TComboBox
-    Left = 296
+    Left = 192
     Top = 304
     Width = 265
     Height = 24
@@ -363,7 +365,7 @@ object Fsiswa: TFsiswa
       'PEREMPUAN')
   end
   object CbbTingkat_kelas: TComboBox
-    Left = 296
+    Left = 192
     Top = 352
     Width = 265
     Height = 24
@@ -381,7 +383,7 @@ object Fsiswa: TFsiswa
       '12')
   end
   object CbbJurusan: TComboBox
-    Left = 296
+    Left = 192
     Top = 392
     Width = 265
     Height = 24
@@ -398,7 +400,7 @@ object Fsiswa: TFsiswa
       'IPS')
   end
   object Dtime: TDateTimePicker
-    Left = 296
+    Left = 192
     Top = 256
     Width = 265
     Height = 24
@@ -413,7 +415,7 @@ object Fsiswa: TFsiswa
     TabOrder = 17
   end
   object DBGrid1: TDBGrid
-    Left = 584
+    Left = 480
     Top = 16
     Width = 481
     Height = 361
@@ -427,7 +429,7 @@ object Fsiswa: TFsiswa
     OnCellClick = DBGrid1CellClick
   end
   object CbbStatus: TComboBox
-    Left = 296
+    Left = 192
     Top = 608
     Width = 265
     Height = 24

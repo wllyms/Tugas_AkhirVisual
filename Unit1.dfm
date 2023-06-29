@@ -60,6 +60,7 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
       TabOrder = 1
+      OnClick = Button2Click
     end
     object Button3: TButton
       Left = 16
