@@ -214,6 +214,7 @@ object Fortu: TFortu
     Font.Style = []
     ParentFont = False
     TabOrder = 6
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 712
@@ -228,6 +229,7 @@ object Fortu: TFortu
     Font.Style = []
     ParentFont = False
     TabOrder = 7
+    OnClick = btn5Click
   end
   object EdtTelepon: TEdit
     Left = 824
