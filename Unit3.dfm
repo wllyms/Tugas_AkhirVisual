@@ -199,6 +199,7 @@ object Fortu: TFortu
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 592
@@ -254,6 +255,7 @@ object Fortu: TFortu
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
     Columns = <
       item
         Alignment = taCenter

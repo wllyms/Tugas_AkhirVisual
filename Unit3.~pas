@@ -37,6 +37,8 @@ type
     CbbJk: TComboBox;
     CbbStatus: TComboBox;
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -45,6 +47,7 @@ type
 
 var
   Fortu: TFortu;
+  id: string;
 
 implementation
 
@@ -60,6 +63,32 @@ ZQuery1.SQL.Clear;
   ZQuery1.SQL.Add('select * from ortu');
   ZQuery1.Open;
   ShowMessage('DATA BERHASIL DISIMPAN');
+end;
+
+procedure TFortu.btn3Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('update ortu set nik="'+EdtNik.Text+'", nama="'+EdtNama.Text+'",pendidikan="'+CbbPendidikan.Text+'",pekerjaan="'+EdtPekerjaan.Text+'",alamat="'+EdtAlamat.Text+'",telp="'+EdtTelepon.Text+'",agama="'+EdtAgama.Text+'",jk="'+CbbJk.Text+'",status="'+CbbStatus.Text+'" where siswa_id="'+id+'"');
+  ZQuery1.ExecSQL;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from ortu');
+  ZQuery1.Open;
+  Showmessage('DATA BERHASIL DI EDIT');
+end;
+
+procedure TFortu.DBGrid1CellClick(Column: TColumn);
+begin
+id:=ZQuery1.Fields[0].AsString;
+  EdtNik.Text:=ZQuery1.Fields[1].AsString;
+  EdtNama.Text:=ZQuery1.Fields[2].AsString;
+  CbbPendidikan.Text:=ZQuery1.Fields[3].AsString;
+  EdtPekerjaan.Text:=ZQuery1.Fields[4].AsString;
+  EdtTelepon.Text:=ZQuery1.Fields[5].AsString;
+  EdtAlamat.Text:=ZQuery1.Fields[6].AsString;
+  EdtAgama.Text:=ZQuery1.Fields[7].AsString;
+  CbbJk.Text:=ZQuery1.Fields[8].AsString;
+  CbbStatus.Text:=ZQuery1.Fields[9].AsString;
 end;
 
 end.

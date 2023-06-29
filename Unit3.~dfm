@@ -199,6 +199,7 @@ object Fortu: TFortu
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 592
@@ -254,6 +255,96 @@ object Fortu: TFortu
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'ortu_id'
+        Title.Alignment = taCenter
+        Title.Caption = 'ID ORTU'
+        Width = 50
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'nik'
+        Title.Alignment = taCenter
+        Title.Caption = 'NIK'
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'nama'
+        Title.Alignment = taCenter
+        Title.Caption = 'NAMA'
+        Width = 150
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'pendidikan'
+        Title.Alignment = taCenter
+        Title.Caption = 'PENDIDIKAN'
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'pekerjaan'
+        Title.Alignment = taCenter
+        Title.Caption = 'PEKERJAAN'
+        Width = 90
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'alamat'
+        Title.Alignment = taCenter
+        Title.Caption = 'ALAMAT'
+        Width = 150
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'telp'
+        Title.Alignment = taCenter
+        Title.Caption = 'TELEPON'
+        Width = 70
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'agama'
+        Title.Alignment = taCenter
+        Title.Caption = 'AGAMA'
+        Width = 100
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'jk'
+        Title.Alignment = taCenter
+        Title.Caption = 'JENIS KELAMIN'
+        Width = 90
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'status'
+        Title.Alignment = taCenter
+        Title.Caption = 'STATUS'
+        Width = 90
+        Visible = True
+      end>
   end
   object CbbPendidikan: TComboBox
     Left = 296
