@@ -131,7 +131,7 @@ EdtNis.Clear;
   CbbJurusan.Clear;
   EdtWali_kelas.Clear;
   EdtAlamat.Clear;
-  Edtelepon.Clear;
+  EdtTelepon.Clear;
   EdtHp.Clear;
   CbbStatus.Clear;
 end;

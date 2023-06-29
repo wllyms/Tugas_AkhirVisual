@@ -32,7 +32,6 @@ type
     EdtAlamat: TEdit;
     EdtWali_kelas: TEdit;
     Label1: TLabel;
-    btn1: TButton;
     btn2: TButton;
     btn3: TButton;
     btn4: TButton;
@@ -131,7 +130,7 @@ EdtNis.Clear;
   CbbJurusan.Clear;
   EdtWali_kelas.Clear;
   EdtAlamat.Clear;
-  EdTelepon.Clear;
+  EdtTelepon.Clear;
   EdtHp.Clear;
   CbbStatus.Clear;
 end;

@@ -53,7 +53,7 @@ implementation
 procedure TFortu.btn2Click(Sender: TObject);
 begin
 ZQuery1.SQL.Clear;
-  ZQuery1.SQL.Add('insert into ortu values(null,"'+EdtNik.Text+'","'+EdtNama.Text+'","'+EdtPendidikan.Text+'","'+EdtAlamat.Text+'","'+CbbJkelamin.Text+'","'+CbbTingkat_kelas.Text+'","'+CbbJurusan.Text+'","'+EdtWali_kelas.Text+'","'+EdtAlamat.Text+'","'+EdtTelepon.Text+'","'+EdtHp.Text+'","'+CbbStatus.Text+'")');
+  ZQuery1.SQL.Add('insert into ortu values(null,"'+EdtNik.Text+'","'+EdtNama.Text+'","'+CbbPendidikan.Text+'","'+EdtPekerjaan.Text+'","'+EdtAlamat.Text+'","'+EdtTelepon.Text+'","'+EdtAgama.Text+'","'+CbbJk.Text+'","'+CbbStatus.Text+'")');
   ZQuery1.ExecSQL ;
 
   ZQuery1.SQL.Clear;
