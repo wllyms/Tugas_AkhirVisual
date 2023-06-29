@@ -63,7 +63,7 @@ object Form1: TForm1
     end
     object Button3: TButton
       Left = 16
-      Top = 192
+      Top = 184
       Width = 185
       Height = 41
       Caption = 'DATA KELAS'

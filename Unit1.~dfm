@@ -61,5 +61,19 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 1
     end
+    object Button3: TButton
+      Left = 16
+      Top = 192
+      Width = 185
+      Height = 41
+      Caption = 'DATA KELAS'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Arial Unicode MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
   end
 end

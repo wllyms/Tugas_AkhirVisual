@@ -20,13 +20,11 @@ type
     Label10: TLabel;
     Label11: TLabel;
     Label1: TLabel;
-    Edt1: TEdit;
-    Edt2: TEdit;
-    Edt3: TEdit;
-    Edt4: TEdit;
-    Edt5: TEdit;
-    Edt6: TEdit;
-    btn1: TButton;
+    EdtOrtu: TEdit;
+    EdtNik: TEdit;
+    EdtNama: TEdit;
+    EdtPekerjaan: TEdit;
+    EdtAlamat: TEdit;
     btn2: TButton;
     btn3: TButton;
     btn4: TButton;
@@ -34,11 +32,12 @@ type
     ZQuery1: TZQuery;
     ZConnection1: TZConnection;
     DataSource1: TDataSource;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit4: TEdit;
+    EdtTelepon: TEdit;
+    EdtAgama: TEdit;
     DBGrid1: TDBGrid;
+    CbbPendidikan: TComboBox;
+    CbbJk: TComboBox;
+    CbbStatus: TComboBox;
   private
     { Private declarations }
   public
