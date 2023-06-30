@@ -108,7 +108,7 @@ procedure TFortu.btn5Click(Sender: TObject);
 begin
  EdtNik.Clear;
   EdtNama.Clear;
-  EdtPendidikan.Clear;
+  CbbPendidikan.Clear;
   EdtPekerjaan.Clear;
   EdtAlamat.Clear;
   EdtTelepon.Clear;

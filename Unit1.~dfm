@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 192
-  Top = 117
+  Left = 333
+  Top = 194
   Width = 1044
   Height = 540
   Caption = 'FORM UTAMA'
@@ -75,6 +75,21 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
       TabOrder = 2
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Left = 16
+      Top = 240
+      Width = 185
+      Height = 41
+      Caption = 'DATA WALI KELAS'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Arial Unicode MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
       OnClick = Button3Click
     end
   end

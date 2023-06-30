@@ -245,8 +245,8 @@ object Fwali: TFwali
     ItemHeight = 13
     TabOrder = 9
     Items.Strings = (
-      'AKTIF'
-      'PENSIUN')
+      'KANDUNG'
+      'WALI')
   end
   object EdtMatpel: TEdit
     Left = 296

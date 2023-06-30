@@ -1,6 +1,6 @@
 object Fortu: TFortu
-  Left = 201
-  Top = 158
+  Left = 43
+  Top = 157
   Width = 1044
   Height = 725
   Caption = 'FORM ORANG TUA'

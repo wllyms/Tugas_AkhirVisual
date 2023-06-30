@@ -13,6 +13,7 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
+    Button4: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -27,7 +28,7 @@ var
 
 implementation
 
-uses Unit2, Unit3, Unit4;
+uses Unit2, Unit3, Unit4, Unit5;
 
 {$R *.dfm}
 
@@ -43,7 +44,7 @@ end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-Fkelas.show;
+Fwali.show;
 end;
 
 end.
