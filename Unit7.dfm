@@ -151,7 +151,7 @@ object Fpelanggaran: TFpelanggaran
         Title.Font.Height = -11
         Title.Font.Name = 'MS Sans Serif'
         Title.Font.Style = [fsBold]
-        Width = 80
+        Width = 120
         Visible = True
       end
       item

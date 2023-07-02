@@ -6,7 +6,8 @@ uses
   Unit2 in 'Unit2.pas' {Fsiswa},
   Unit3 in 'Unit3.pas' {Fortu},
   Unit4 in 'Unit4.pas' {Fkelas},
-  Unit5 in 'Unit5.pas' {Fwali};
+  Unit5 in 'Unit5.pas' {Fwali},
+  Unit6 in 'Unit6.pas' {Fprestasi};
 
 {$R *.res}
 
@@ -17,5 +18,6 @@ begin
   Application.CreateForm(TFortu, Fortu);
   Application.CreateForm(TFkelas, Fkelas);
   Application.CreateForm(TFwali, Fwali);
+  Application.CreateForm(TFprestasi, Fprestasi);
   Application.Run;
 end.

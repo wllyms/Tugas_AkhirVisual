@@ -16,6 +16,7 @@ type
     Button4: TButton;
     Button5: TButton;
     Button6: TButton;
+    Button7: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -30,7 +31,7 @@ var
 
 implementation
 
-uses Unit2, Unit3, Unit4, Unit5, Unit6;
+uses Unit2, Unit3, Unit4, Unit5, Unit6, Unit7;
 
 {$R *.dfm}
 

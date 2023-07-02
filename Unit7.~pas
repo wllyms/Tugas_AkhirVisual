@@ -88,6 +88,5 @@ id:=ZQuery1.Fields[0].AsString;
   EdtPelanggaran.Text:=ZQuery1.Fields[1].AsString;
   EdtPoint.Text:=ZQuery1.Fields[2].AsString;
 end;
-end;
 
 end.

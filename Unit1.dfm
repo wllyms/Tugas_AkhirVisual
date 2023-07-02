@@ -122,5 +122,20 @@ object Form1: TForm1
       TabOrder = 5
       OnClick = Button3Click
     end
+    object Button7: TButton
+      Left = 16
+      Top = 408
+      Width = 185
+      Height = 41
+      Caption = 'LAPORAN'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Arial Unicode MS'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      OnClick = Button3Click
+    end
   end
 end
