@@ -46,7 +46,7 @@ end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-Fprestasi.show;
+Fpelanggaran.show;
 end;
 
 end.
