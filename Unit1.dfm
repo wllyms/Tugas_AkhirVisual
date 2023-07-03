@@ -14,14 +14,14 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
-    Left = 80
+    Left = 88
     Top = 16
     Width = 225
-    Height = 473
+    Height = 545
     TabOrder = 0
     object Label1: TLabel
       Left = 64
-      Top = 16
+      Top = 8
       Width = 96
       Height = 37
       Caption = 'MENU'
@@ -34,7 +34,7 @@ object Form1: TForm1
     end
     object Button1: TButton
       Left = 16
-      Top = 72
+      Top = 56
       Width = 185
       Height = 41
       Caption = 'DATA SISWA'
@@ -49,7 +49,7 @@ object Form1: TForm1
     end
     object Button2: TButton
       Left = 16
-      Top = 128
+      Top = 112
       Width = 185
       Height = 41
       Caption = 'DATA ORANG TUA'
@@ -64,7 +64,7 @@ object Form1: TForm1
     end
     object Button3: TButton
       Left = 16
-      Top = 184
+      Top = 168
       Width = 185
       Height = 41
       Caption = 'DATA KELAS'
@@ -79,7 +79,7 @@ object Form1: TForm1
     end
     object Button4: TButton
       Left = 16
-      Top = 240
+      Top = 224
       Width = 185
       Height = 41
       Caption = 'DATA WALI KELAS'
@@ -92,42 +92,42 @@ object Form1: TForm1
       TabOrder = 3
       OnClick = Button3Click
     end
-    object Button5: TButton
+    object Button7: TButton
       Left = 16
-      Top = 352
+      Top = 424
       Width = 185
       Height = 41
-      Caption = 'DATA PELANGGARAN'
+      Caption = 'LAPORAN'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -17
+      Font.Height = -19
       Font.Name = 'Arial Unicode MS'
       Font.Style = []
       ParentFont = False
       TabOrder = 4
       OnClick = Button3Click
     end
-    object Button6: TButton
+    object Button8: TButton
       Left = 16
-      Top = 296
+      Top = 280
       Width = 185
       Height = 41
-      Caption = 'DATA PRESTASI'
+      Caption = 'DATA POIN'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -17
+      Font.Height = -19
       Font.Name = 'Arial Unicode MS'
       Font.Style = []
       ParentFont = False
       TabOrder = 5
       OnClick = Button3Click
     end
-    object Button7: TButton
+    object Button5: TButton
       Left = 16
-      Top = 408
+      Top = 336
       Width = 185
       Height = 41
-      Caption = 'LAPORAN'
+      Caption = 'DATA POIN SISWA'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -19

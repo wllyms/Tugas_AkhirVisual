@@ -9,19 +9,6 @@ uses
 
 type
   TFpelanggaran = class(TForm)
-    Label3: TLabel;
-    Label4: TLabel;
-    Label1: TLabel;
-    EdtPelanggaran: TEdit;
-    EdtPoint: TEdit;
-    btn2: TButton;
-    btn3: TButton;
-    btn4: TButton;
-    btn5: TButton;
-    ZQuery1: TZQuery;
-    ZConnection1: TZConnection;
-    DataSource1: TDataSource;
-    DBGrid1: TDBGrid;
     procedure btn2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure btn4Click(Sender: TObject);

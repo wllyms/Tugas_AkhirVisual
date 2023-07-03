@@ -1,9 +1,9 @@
-object Fpelanggaran: TFpelanggaran
+object FPsiswa: TFPsiswa
   Left = 192
-  Top = 116
+  Top = 117
   Width = 1044
-  Height = 541
-  Caption = 'FORM PELANGGARAN'
+  Height = 540
+  Caption = 'FORM POIN SISWA'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

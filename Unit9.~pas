@@ -1,14 +1,13 @@
-unit Unit7;
+unit Unit9;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, DB, ZAbstractConnection, ZConnection, ZAbstractRODataset,
-  ZAbstractDataset, ZDataset, Grids, DBGrids, StdCtrls;
+  Dialogs;
 
 type
-  TFpelanggaran = class(TForm)
+  TFPsiswa = class(TForm)
   private
     { Private declarations }
   public
@@ -16,8 +15,7 @@ type
   end;
 
 var
-  Fpelanggaran: TFpelanggaran;
-  id: string;
+  FPsiswa: TFPsiswa;
 
 implementation
 

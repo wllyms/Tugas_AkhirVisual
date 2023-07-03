@@ -8,7 +8,9 @@ uses
   Unit4 in 'Unit4.pas' {Fkelas},
   Unit5 in 'Unit5.pas' {Fwali},
   Unit6 in 'Unit6.pas' {Fprestasi},
-  Unit7 in 'Unit7.pas' {Fpelanggaran};
+  Unit7 in 'Unit7.pas' {Fpelanggaran},
+  Unit8 in 'Unit8.pas' {Fpoin},
+  Unit9 in 'Unit9.pas' {FPsiswa};
 
 {$R *.res}
 
@@ -21,5 +23,7 @@ begin
   Application.CreateForm(TFwali, Fwali);
   Application.CreateForm(TFprestasi, Fprestasi);
   Application.CreateForm(TFpelanggaran, Fpelanggaran);
+  Application.CreateForm(TFpoin, Fpoin);
+  Application.CreateForm(TFPsiswa, FPsiswa);
   Application.Run;
 end.
