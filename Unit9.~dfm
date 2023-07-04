@@ -1,8 +1,8 @@
 object FPsiswa: TFPsiswa
-  Left = 192
-  Top = 117
+  Left = 537
+  Top = 183
   Width = 1044
-  Height = 711
+  Height = 712
   Caption = 'FORM POIN SISWA'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,9 +16,9 @@ object FPsiswa: TFPsiswa
   object Label3: TLabel
     Left = 64
     Top = 96
-    Width = 100
+    Width = 144
     Height = 24
-    Caption = 'ID SISWA'
+    Caption = 'NAMA SISWA'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -21
@@ -29,9 +29,9 @@ object FPsiswa: TFPsiswa
   object Label4: TLabel
     Left = 64
     Top = 136
-    Width = 85
+    Width = 72
     Height = 24
-    Caption = 'ID POIN'
+    Caption = 'KELAS'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -21
@@ -42,9 +42,9 @@ object FPsiswa: TFPsiswa
   object Label8: TLabel
     Left = 64
     Top = 176
-    Width = 167
+    Width = 137
     Height = 24
-    Caption = 'ID WALI KELAS'
+    Caption = 'WALI KELAS'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -21
@@ -54,10 +54,10 @@ object FPsiswa: TFPsiswa
   end
   object Label9: TLabel
     Left = 64
-    Top = 256
-    Width = 102
+    Top = 288
+    Width = 55
     Height = 24
-    Caption = 'ID KELAS'
+    Caption = 'POIN'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -21
@@ -68,9 +68,9 @@ object FPsiswa: TFPsiswa
   object Label6: TLabel
     Left = 64
     Top = 216
-    Width = 93
+    Width = 60
     Height = 24
-    Caption = 'ID ORTU'
+    Caption = 'JENIS'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -21
@@ -92,8 +92,8 @@ object FPsiswa: TFPsiswa
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 600
-    Top = 96
+    Left = 64
+    Top = 328
     Width = 185
     Height = 24
     Caption = 'TANGGAL INPUT'
@@ -105,8 +105,8 @@ object FPsiswa: TFPsiswa
     ParentFont = False
   end
   object Label7: TLabel
-    Left = 600
-    Top = 136
+    Left = 64
+    Top = 368
     Width = 115
     Height = 24
     Caption = 'SEMESTER'
@@ -118,8 +118,8 @@ object FPsiswa: TFPsiswa
     ParentFont = False
   end
   object Label5: TLabel
-    Left = 600
-    Top = 176
+    Left = 64
+    Top = 408
     Width = 85
     Height = 24
     Caption = 'STATUS'
@@ -131,39 +131,31 @@ object FPsiswa: TFPsiswa
     ParentFont = False
   end
   object Label10: TLabel
-    Left = 96
-    Top = 368
+    Left = 664
+    Top = 488
     Width = 65
     Height = 13
     Caption = 'PILIH SISWA'
   end
-  object Label11: TLabel
-    Left = 96
-    Top = 544
-    Width = 61
-    Height = 13
-    Caption = 'PILIH ORTU'
-  end
-  object Label12: TLabel
-    Left = 808
-    Top = 368
-    Width = 57
-    Height = 13
-    Caption = 'PILIH WALI'
-  end
   object Label13: TLabel
     Left = 448
-    Top = 368
+    Top = 528
     Width = 56
     Height = 13
     Caption = 'PILIH POIN'
   end
-  object Label14: TLabel
-    Left = 456
-    Top = 544
-    Width = 64
-    Height = 13
-    Caption = 'PILIH KELAS'
+  object Label11: TLabel
+    Left = 64
+    Top = 248
+    Width = 129
+    Height = 24
+    Caption = 'NAMA POIN'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Calisto MT'
+    Font.Style = []
+    ParentFont = False
   end
   object EdtSiswa: TEdit
     Left = 296
@@ -174,7 +166,7 @@ object FPsiswa: TFPsiswa
   end
   object EdtPoin: TEdit
     Left = 296
-    Top = 136
+    Top = 288
     Width = 265
     Height = 21
     TabOrder = 1
@@ -188,12 +180,12 @@ object FPsiswa: TFPsiswa
   end
   object EdtKelas: TEdit
     Left = 296
-    Top = 256
+    Top = 136
     Width = 268
     Height = 21
     TabOrder = 3
   end
-  object EdtOrtu: TEdit
+  object EdtJenis: TEdit
     Left = 296
     Top = 216
     Width = 265
@@ -201,8 +193,8 @@ object FPsiswa: TFPsiswa
     TabOrder = 4
   end
   object CbbSemester: TComboBox
-    Left = 832
-    Top = 128
+    Left = 296
+    Top = 368
     Width = 265
     Height = 21
     ItemHeight = 13
@@ -212,19 +204,19 @@ object FPsiswa: TFPsiswa
       'GENAP')
   end
   object CbbStatus: TComboBox
-    Left = 832
-    Top = 168
+    Left = 296
+    Top = 408
     Width = 265
     Height = 21
     ItemHeight = 13
     TabOrder = 6
     Items.Strings = (
-      'PRESTASI'
-      'PELANGGARAN')
+      'AKTIF'
+      'TIDAK AKTIF')
   end
-  object DDttTanggal: TDateTimePicker
-    Left = 832
-    Top = 88
+  object DttTanggal: TDateTimePicker
+    Left = 296
+    Top = 328
     Width = 265
     Height = 21
     Date = 45110.940909490740000000
@@ -232,8 +224,8 @@ object FPsiswa: TFPsiswa
     TabOrder = 7
   end
   object btn2: TButton
-    Left = 392
-    Top = 308
+    Left = 56
+    Top = 452
     Width = 97
     Height = 49
     Caption = 'Simpan'
@@ -244,10 +236,11 @@ object FPsiswa: TFPsiswa
     Font.Style = []
     ParentFont = False
     TabOrder = 8
+    OnClick = btn2Click
   end
   object btn3: TButton
-    Left = 512
-    Top = 308
+    Left = 168
+    Top = 452
     Width = 97
     Height = 49
     Caption = 'Edit'
@@ -258,10 +251,11 @@ object FPsiswa: TFPsiswa
     Font.Style = []
     ParentFont = False
     TabOrder = 9
+    OnClick = btn3Click
   end
   object btn4: TButton
-    Left = 632
-    Top = 308
+    Left = 280
+    Top = 452
     Width = 97
     Height = 49
     Caption = 'Hapus'
@@ -272,10 +266,11 @@ object FPsiswa: TFPsiswa
     Font.Style = []
     ParentFont = False
     TabOrder = 10
+    OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 752
-    Top = 308
+    Left = 392
+    Top = 452
     Width = 105
     Height = 49
     Caption = 'Batal'
@@ -286,10 +281,11 @@ object FPsiswa: TFPsiswa
     Font.Style = []
     ParentFont = False
     TabOrder = 11
+    OnClick = btn5Click
   end
   object DBGrid1: TDBGrid
-    Left = 96
-    Top = 392
+    Left = 664
+    Top = 512
     Width = 320
     Height = 120
     DataSource = DataSource1
@@ -299,11 +295,194 @@ object FPsiswa: TFPsiswa
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'siswa_id'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'nis'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'nisn'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'nama_siswa'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Width = 200
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'nik'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'tempat_lahir'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'tanggal_lahir'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'jk'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'tingkat_kelas'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'jurusan'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'wali_kelas'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'alamat'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'telepon'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'hp'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'status'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end>
   end
   object DBGrid2: TDBGrid
-    Left = 448
-    Top = 392
-    Width = 320
+    Left = 56
+    Top = 520
+    Width = 577
     Height = 120
     DataSource = DataSource2
     TabOrder = 13
@@ -312,58 +491,78 @@ object FPsiswa: TFPsiswa
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
+    OnCellClick = DBGrid2CellClick
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'id_poin'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'jenis_poin'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'nama_poin'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Width = 300
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'point'
+        Title.Alignment = taCenter
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end>
+  end
+  object EdtNP: TEdit
+    Left = 296
+    Top = 248
+    Width = 265
+    Height = 21
+    TabOrder = 14
   end
   object DBGrid3: TDBGrid
-    Left = 808
-    Top = 392
+    Left = 584
+    Top = 120
     Width = 320
     Height = 120
-    DataSource = DataSource3
-    TabOrder = 14
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'MS Sans Serif'
-    TitleFont.Style = []
-  end
-  object DBGrid4: TDBGrid
-    Left = 456
-    Top = 568
-    Width = 320
-    Height = 120
-    DataSource = DataSource5
+    DataSource = DataSource4
     TabOrder = 15
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
-  end
-  object DBGrid5: TDBGrid
-    Left = 96
-    Top = 568
-    Width = 320
-    Height = 120
-    DataSource = DataSource4
-    TabOrder = 16
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'MS Sans Serif'
-    TitleFont.Style = []
-  end
-  object DBGrid6: TDBGrid
-    Left = 816
-    Top = 568
-    Width = 320
-    Height = 120
-    DataSource = DataSource6
-    TabOrder = 17
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'MS Sans Serif'
-    TitleFont.Style = []
+    OnCellClick = DBGrid3CellClick
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -387,18 +586,18 @@ object FPsiswa: TFPsiswa
     SQL.Strings = (
       'select * from tabel_siswa')
     Params = <>
-    Left = 1184
-    Top = 40
+    Left = 680
+    Top = 8
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 1232
-    Top = 40
+    Left = 640
+    Top = 8
   end
   object DataSource2: TDataSource
     DataSet = ZQuery2
-    Left = 1232
-    Top = 88
+    Left = 640
+    Top = 56
   end
   object ZQuery2: TZQuery
     Connection = ZConnection1
@@ -406,63 +605,22 @@ object FPsiswa: TFPsiswa
     SQL.Strings = (
       'select * from data_poin')
     Params = <>
-    Left = 1184
-    Top = 88
-  end
-  object DataSource3: TDataSource
-    DataSet = ZQuery3
-    Left = 1232
-    Top = 136
-  end
-  object ZQuery3: TZQuery
-    Connection = ZConnection1
-    Active = True
-    SQL.Strings = (
-      'select * from wali')
-    Params = <>
-    Left = 1184
-    Top = 136
+    Left = 680
+    Top = 56
   end
   object DataSource4: TDataSource
     DataSet = ZQuery4
-    Left = 1232
-    Top = 184
+    Left = 560
+    Top = 56
   end
   object ZQuery4: TZQuery
     Connection = ZConnection1
+    AutoCalcFields = False
     Active = True
     SQL.Strings = (
-      'select * from ortu')
+      'select * from riwayat_poinn')
     Params = <>
-    Left = 1184
-    Top = 184
-  end
-  object DataSource5: TDataSource
-    DataSet = ZQuery5
-    Left = 1232
-    Top = 232
-  end
-  object ZQuery5: TZQuery
-    Connection = ZConnection1
-    Active = True
-    SQL.Strings = (
-      'select * from kelas')
-    Params = <>
-    Left = 1184
-    Top = 232
-  end
-  object DataSource6: TDataSource
-    DataSet = ZQuery6
-    Left = 1232
-    Top = 280
-  end
-  object ZQuery6: TZQuery
-    Connection = ZConnection1
-    Active = True
-    SQL.Strings = (
-      'select * from riwayat_poin')
-    Params = <>
-    Left = 1184
-    Top = 280
+    Left = 600
+    Top = 56
   end
 end

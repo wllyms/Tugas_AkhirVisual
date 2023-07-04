@@ -425,6 +425,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'nis'
         Title.Alignment = taCenter
+        Title.Caption = 'NIS'
         Width = 50
         Visible = True
       end
@@ -433,6 +434,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'nisn'
         Title.Alignment = taCenter
+        Title.Caption = 'NISN'
         Visible = True
       end
       item
@@ -440,6 +442,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'nama_siswa'
         Title.Alignment = taCenter
+        Title.Caption = 'NAMA'
         Width = 150
         Visible = True
       end
@@ -448,6 +451,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'nik'
         Title.Alignment = taCenter
+        Title.Caption = 'NIK'
         Visible = True
       end
       item
@@ -455,6 +459,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'tempat_lahir'
         Title.Alignment = taCenter
+        Title.Caption = 'TEMPAT LAHIR'
         Width = 100
         Visible = True
       end
@@ -463,7 +468,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'tanggal_lahir'
         Title.Alignment = taCenter
-        Width = 90
+        Title.Caption = 'TANGGAL LAHIR'
         Visible = True
       end
       item
@@ -471,6 +476,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'jk'
         Title.Alignment = taCenter
+        Title.Caption = 'JENIS KELAMIN'
         Width = 90
         Visible = True
       end
@@ -479,6 +485,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'tingkat_kelas'
         Title.Alignment = taCenter
+        Title.Caption = 'TINGKAT KELAS'
         Visible = True
       end
       item
@@ -486,6 +493,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'jurusan'
         Title.Alignment = taCenter
+        Title.Caption = 'JURUSAN'
         Width = 90
         Visible = True
       end
@@ -494,6 +502,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'wali_kelas'
         Title.Alignment = taCenter
+        Title.Caption = 'WALI KELAS'
         Width = 150
         Visible = True
       end
@@ -502,6 +511,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'alamat'
         Title.Alignment = taCenter
+        Title.Caption = 'ALAMAT'
         Visible = True
       end
       item
@@ -509,6 +519,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'telepon'
         Title.Alignment = taCenter
+        Title.Caption = 'TELEPON'
         Width = 70
         Visible = True
       end
@@ -517,6 +528,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'hp'
         Title.Alignment = taCenter
+        Title.Caption = 'HP'
         Visible = True
       end
       item
@@ -524,6 +536,7 @@ object Fsiswa: TFsiswa
         Expanded = False
         FieldName = 'status'
         Title.Alignment = taCenter
+        Title.Caption = 'STATUS'
         Visible = True
       end>
   end

@@ -362,9 +362,9 @@ object Fsiswa: TFsiswa
     ParentFont = False
     TabOrder = 14
     Items.Strings = (
-      '10'
-      '11'
-      '12')
+      'X'
+      'XI'
+      'XII')
   end
   object CbbJurusan: TComboBox
     Left = 824
