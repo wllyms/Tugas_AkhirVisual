@@ -10,7 +10,8 @@ uses
   Unit6 in 'Unit6.pas' {Fprestasi},
   Unit7 in 'Unit7.pas' {Fpelanggaran},
   Unit8 in 'Unit8.pas' {Fpoin},
-  Unit9 in 'Unit9.pas' {FPsiswa};
+  Unit9 in 'Unit9.pas' {FPsiswa},
+  Unit10 in 'Unit10.pas' {FLutama};
 
 {$R *.res}
 
@@ -25,5 +26,6 @@ begin
   Application.CreateForm(TFpelanggaran, Fpelanggaran);
   Application.CreateForm(TFpoin, Fpoin);
   Application.CreateForm(TFPsiswa, FPsiswa);
+  Application.CreateForm(TFLutama, FLutama);
   Application.Run;
 end.

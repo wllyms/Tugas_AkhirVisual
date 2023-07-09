@@ -47,7 +47,7 @@ end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-FPsiswa.show;
+FLutama.show;
 end;
 
 end.
