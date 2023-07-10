@@ -26,6 +26,7 @@ object FLutama: TFLutama
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 0
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 288

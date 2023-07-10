@@ -15,8 +15,8 @@ type
     Button4: TButton;
     frxReport1: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
-    ZConnection1: TZConnection;
     ZQuery1: TZQuery;
+    ZConnection2: TZConnection;
   private
     { Private declarations }
   public

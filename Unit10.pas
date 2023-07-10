@@ -17,6 +17,7 @@ type
     frxDBDataset1: TfrxDBDataset;
     ZQuery1: TZQuery;
     ZConnection2: TZConnection;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,5 +30,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFLutama.Button1Click(Sender: TObject);
+begin
+frxReport1.ShowReport();
+end;
 
 end.

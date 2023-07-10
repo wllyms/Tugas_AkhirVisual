@@ -31,7 +31,7 @@ var
 
 implementation
 
-uses Unit2, Unit3, Unit4, Unit5, Unit6, Unit7, Unit8, Unit9;
+uses Unit2, Unit3, Unit4, Unit5, Unit6, Unit7, Unit8, Unit9, Unit10;
 
 {$R *.dfm}
 
@@ -47,7 +47,7 @@ end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-FPsiswa.show;
+FLutama.show;
 end;
 
 end.
