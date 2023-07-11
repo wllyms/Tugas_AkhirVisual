@@ -12,7 +12,8 @@ uses
   Unit8 in 'Unit8.pas' {Fpoin},
   Unit9 in 'Unit9.pas' {FPsiswa},
   Unit10 in 'Unit10.pas' {FLutama},
-  Unit11 in 'Unit11.pas' {Form11};
+  Unit11 in 'Unit11.pas' {Form11},
+  Unit12 in 'Unit12.pas' {FLogin};
 
 {$R *.res}
 
@@ -29,5 +30,6 @@ begin
   Application.CreateForm(TFPsiswa, FPsiswa);
   Application.CreateForm(TFLutama, FLutama);
   Application.CreateForm(TForm11, Form11);
+  Application.CreateForm(TFLogin, FLogin);
   Application.Run;
 end.
