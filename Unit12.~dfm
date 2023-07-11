@@ -1,9 +1,8 @@
 object FLogin: TFLogin
-  Left = 192
-  Top = 117
-  Width = 433
-  Height = 344
-  AutoSize = True
+  Left = 282
+  Top = 160
+  Width = 537
+  Height = 382
   Caption = 'LOGIN FORM'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -62,14 +61,14 @@ object FLogin: TFLogin
     ParentFont = False
     Transparent = True
   end
-  object Edtuser: TEdit
+  object EdtUser: TEdit
     Left = 200
     Top = 104
     Width = 153
     Height = 21
     TabOrder = 0
   end
-  object Edtpass: TEdit
+  object EdtPass: TEdit
     Left = 200
     Top = 136
     Width = 153
@@ -89,5 +88,6 @@ object FLogin: TFLogin
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 2
+    OnClick = Button1Click
   end
 end

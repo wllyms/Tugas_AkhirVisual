@@ -61,14 +61,14 @@ object FLogin: TFLogin
     ParentFont = False
     Transparent = True
   end
-  object Edtuser: TEdit
+  object EdtUser: TEdit
     Left = 200
     Top = 104
     Width = 153
     Height = 21
     TabOrder = 0
   end
-  object Edtpass: TEdit
+  object EdtPass: TEdit
     Left = 200
     Top = 136
     Width = 153
@@ -88,28 +88,6 @@ object FLogin: TFLogin
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 2
-  end
-  object ZQuery1: TZQuery
-    Connection = ZConnection1
-    SQL.Strings = (
-      'select * from kelas')
-    Params = <>
-    Left = 384
-    Top = 103
-  end
-  object ZConnection1: TZConnection
-    ControlsCodePage = cGET_ACP
-    UTF8StringsAsWideField = False
-    AutoEncodeStrings = False
-    HostName = 'Localhost'
-    Port = 3306
-    Database = 'db_laporansiswa'
-    User = 'root'
-    Protocol = 'mysql'
-    LibraryLocation = 
-      'C:\Users\Lenovo\OneDrive\Documents\Kuliah Uniskahhh\Semester 4\V' +
-      'isual\Projectvisual\libmysql.dll'
-    Left = 384
-    Top = 47
+    OnClick = Button1Click
   end
 end

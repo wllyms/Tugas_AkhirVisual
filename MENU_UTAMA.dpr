@@ -13,12 +13,14 @@ uses
   Unit9 in 'Unit9.pas' {FPsiswa},
   Unit10 in 'Unit10.pas' {FLutama},
   Unit11 in 'Unit11.pas' {Form11},
-  Unit12 in 'Unit12.pas' {FLogin};
+  Unit12 in 'Unit12.pas' {FLogin},
+  Unit13 in 'Unit13.pas' {dm: TDataModule};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TFLogin, FLogin);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TFsiswa, Fsiswa);
   Application.CreateForm(TFortu, Fortu);
@@ -30,6 +32,6 @@ begin
   Application.CreateForm(TFPsiswa, FPsiswa);
   Application.CreateForm(TFLutama, FLutama);
   Application.CreateForm(TForm11, Form11);
-  Application.CreateForm(TFLogin, FLogin);
+  Application.CreateForm(Tdm, dm);
   Application.Run;
 end.

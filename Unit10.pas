@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, DB, ZAbstractRODataset, ZAbstractDataset, ZDataset,
-  ZAbstractConnection, ZConnection, frxClass, frxDBSet;
+  ZAbstractConnection, ZConnection, frxClass, frxDBSet, Grids, DBGrids;
 
 type
   TFLutama = class(TForm)
@@ -15,9 +15,16 @@ type
     Button4: TButton;
     frxReport1: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
-    ZQuery1: TZQuery;
+    Zriwayat: TZQuery;
     ZConnection2: TZConnection;
+    frxReport2: TfrxReport;
+    frxDBDataset2: TfrxDBDataset;
+    ZQuery1: TZQuery;
+    ZQuery2: TZQuery;
+    frxDBDataset3: TfrxDBDataset;
     procedure Button1Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,6 +33,8 @@ type
 
 var
   FLutama: TFLutama;
+  id: string;
+  nm: string;
 
 implementation
 
@@ -34,6 +43,19 @@ implementation
 procedure TFLutama.Button1Click(Sender: TObject);
 begin
 frxReport1.ShowReport();
+end;
+
+procedure TFLutama.DBGrid1CellClick(Column: TColumn);
+begin
+
+
+ // Laporan Prestasi
+
+end;
+
+procedure TFLutama.Button2Click(Sender: TObject);
+begin
+frxReport2.ShowReport();
 end;
 
 end.
